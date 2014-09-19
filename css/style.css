@@ -1,10 +1,9 @@
-/*<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>*/
 
 html {
   height: 100%;
   width: 100%;
-  font-family: 'Open Sans', sans-serif
-} 
+  font-family: 'Open Sans', sans-serif;
+  } 
 
 body{
   font-family: Lato,sans-serif;
@@ -94,7 +93,13 @@ li{
   position: absolute;
   right: 1px;
   margin-top: 5px;
-  border-left: 1px solid #d0d0d0
+  /* border-left: 1px solid #d0d0d0; */
+}
+
+.search_box:after{
+content: url(../images/line.png);
+
+
 }
 
 .slides{
