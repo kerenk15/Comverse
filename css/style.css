@@ -200,7 +200,7 @@ left: 150px;
   padding:8px 10px;
   background: #4ea6ca;
   display:block;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: #FFFFFF;
   position:relative;
   text-decoration: none;	
@@ -208,7 +208,7 @@ left: 150px;
   border-radius: 5px;
   margin-top:30px;
   width: 140px;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .blue_button:after{
@@ -335,9 +335,8 @@ h2 {
 }
 
 .center{
-float: center;
-width: 230px;
-left: 300px;
+width: 210px;
+left: 365px;
 }
 
 .nav_icons{
@@ -498,12 +497,31 @@ height:140px;
 margin-left: 10px;
 }
 
+.wrap{
+  width: 351px;
+  margin-top:5px;
+  padding: 1px;
+  float:left;
+  height: 323px;
+}
+
+.large_box{
+  width:345px;
+  height:210px;
+  overflow: hidden;
+  position: relative;
+  background:#4ea6ca;
+}
+
 .picture_box{
-   height: 165px;
-   padding: 10px;
+   height: 170px;
+   padding: 20px;
    background: white;
    font-size: 14px;
    margin: 3px;
+   width: 302px;
+   z-index: 10;
+   position: absolute;
  }
 
 .picture_box img{
@@ -514,13 +532,13 @@ margin-left: 10px;
 blockquote{
 float: left;
 margin: 0 7px 7px 0;
-width: 215px;
+width: 180px;
 line-height: 1.6;
 color: black;
 text-decoration: none;
 padding-left: 10px;
 padding-top:5px;
-height: 110px;
+height: 112px;
 }
 
 blockquote:before {
@@ -558,44 +576,117 @@ blockquote:before {
   padding: 0;
 }
 
-.medium_box{
-   height: 185px;
-   padding-left: 10px;
-   background: white;
-   font-size: 14px;
-   margin-left:3px;
-   display: inline-block;
-   margin-top: 6px;
+.picture_box_back{
+  z-index: 5;
+  position: absolute;
+  height: 200px;
 }
 
-.medium_box blockquote{
-width: 180px;
-} 
+.picture_box_back blockquote{
+width: 300px;
+line-height: 1.6em;
+color: white;
+padding: 35px;
+font-size: 18px;
+}
+
+.picture_box_back blockquote:before {
+  content: url(../images/quote-blue.png);
+ }
+
+.picture_box_back blockquote:after {
+  content: url(../images/quote-blue.png);
+ }
+
+.picture_box:hover{
+   transform: translateY(-213px);
+   transition: transform .55s;
+}
 
 .small_box {
-	display: inline-block;
-	margin: 5px;
-	width: 106px;
-	margin-bottom: 0;
+display: inline-block;
+margin: 3px;
+margin-bottom: 1px; 
+width: 107px;
+height: 95px;
+overflow: hidden;
+position: relative;
+}
+
+.icon_front{
+  z-index: 10;
+  position: absolute;
+}
+
+.icon_back{
+  z-index: 5;
+  position: absolute;
+}
+
+.small_box .icon_front:hover{
+   transform: translateY(-95px);
+   transition: transform .55s;
+}
+
+.wrap2{
+  width: 233px;
+  display: inline-block;
+  margin-top:5px;
+  height: 210px;
+}
+
+.medium_box{
+height:210px;
+overflow: hidden;
+position: relative;
+background:#4ea6ca;
+}
+
+.no_picture{
+width: 186px;
+height: 170px;
+padding: 20px;
+background: white;
+margin-left:3px;
+margin-top: 4px;
+margin-bottom: 2px;
+z-index: 10;
+position: absolute;
+}
+
+.no_picture_back{
+z-index: 5;
+position: absolute;
+height: 200px;
+}
+
+.no_picture_back blockquote{
+width: 200px;
+line-height: 1.6em;
+color: white;
+padding: 25px;
+font-size: 18px;
+}
+
+.no_picture_back blockquote:before {
+  content: url(../images/quote-blue.png);
+ }
+
+.no_picture_back blockquote:after {
+  content: url(../images/quote-blue.png);
+ }
+
+
+.no_picture:hover{
+   transform: translateY(-215px);
+   transition: transform .55s;
 }
 
 .success_stories{
 	background: #C0C0C0;
-	height: 400px;
-}
-
-.wrap{
-	width: 360px;
-	margin-top:5px;
-	padding: 1px;
-	float:left;
-}
-
-.wrap2{
-	width: 237px;
-	display: inline-block;
-	margin-top:5px;
-
+	height: 550px;
+  overflow: hidden;
+  color:#565656;
 }
 
 footer .center_page  ul{
@@ -630,24 +721,24 @@ h3{
   font-weight: 400;
 }
  footer{
- 	background: black;
+ 	background:#333333;
  	display: relative;
  	overflow:auto;
-  height: 300px;
+  height: 360px;
  }
 .latest_press{
-   display: inline-block;
+  display: inline-block;
 	width: 250px;
-	background: #708090;
+	background:  #575756;
 	padding:5px;
 	position: absolute;
-    right: 0;
-    top:0;
-    height: 289px;
+  right: 0;
+  top:0;
+  height: 350px;
 }
 
 .latest_press h3{
-	color: #3195c9;
+	  color: #3195c9;
     font-size: 16px;
     font-weight: 400px;
     text-align: center;
@@ -695,11 +786,11 @@ h3{
 }
 
 .signUp_button{
-  width: 60px;
-  height: 20px;
+ width: 60px;
+ height: 20px;
  position: absolute;
  right: 2px;
- margin-top: 3px;
+ margin-top: 1px;
  background: #3195c9;
  color:white;
 }
