@@ -14,6 +14,7 @@ body{
 
 header{
 	height: 80px;
+  position: relative;
 }
 
  .center_page{
@@ -47,7 +48,7 @@ content: url(../images/line.png);
 }
 
 .lang {
-margin: 10px;
+margin: 10px 0 0 0 ;
 position: absolute;
 right: 0;
 }
@@ -167,8 +168,7 @@ left: 150px;
 }
 
 .slides{
-  background-image: url(../images/first_slide.png); 
-  background-position: 50% 90%;
+  background: url(../images/first_slide.png)no-repeat 50% 0 fixed; 
   height: 500px;
   position:relative;
   padding-top: 5px;
@@ -414,8 +414,9 @@ left: 365px;
 
 .news{
 	height: 400px;
-	background: url(../images/background2.png);
-	overflow: auto;
+	background: url(../images/background2.png)center center fixed;
+  background-size: auto 100%;
+  overflow: hidden;
 }
 
 .news li{
@@ -436,7 +437,6 @@ width: 940px;
 }
 
 .date_container{
-  width: 270px;
   height:119px;
   background:rgba(256, 256, 256, 0.4);
   overflow: hidden;
@@ -517,7 +517,7 @@ margin-left: 10px;
    height: 170px;
    padding: 20px;
    background: white;
-   font-size: 14px;
+   font-size: 17px;
    margin: 3px;
    width: 302px;
    z-index: 10;
@@ -534,7 +534,7 @@ float: left;
 margin: 0 7px 7px 0;
 width: 180px;
 line-height: 1.6;
-color: black;
+color: #6D6D6D;
 text-decoration: none;
 padding-left: 10px;
 padding-top:5px;
@@ -550,7 +550,7 @@ blockquote:before {
  }
 
 .posission {
-   border-top: 1px solid black;
+   border-top: 1px solid #d0d0d0;
    display: inline-block;
    height: 42px;
    padding-top: 10px;
@@ -565,7 +565,7 @@ blockquote:before {
 
 .posission p{
   text-transform: capitalize;
-  color:black;
+  color:#6D6D6D;
   margin:0;
   font-size: 12px;
  }
@@ -689,6 +689,17 @@ font-size: 18px;
   color:#565656;
 }
 
+.top{
+  background: url(../images/back_top_tab.png) no-repeat;
+  position: absolute;
+  top: 1865px;
+  left: 250px;
+  height: 44px;
+  width:81px;
+
+
+}
+
 footer .center_page  ul{
   display: inline-block;
   padding: 0; 
@@ -704,9 +715,9 @@ footer> .center_page > ul> li a{
 	display: block;
 	width: 202px;
 	text-align: left;
-	font-size:14px;
+	font-size:13px;
 	text-transform: capitalize;
-	line-height:1.5em;
+	line-height:1.6em;
 	margin-left: 15px;
 }
 
@@ -716,30 +727,30 @@ text-decoration: underline;
 
 h3{
 	text-transform: uppercase;
-	size:14px;
+	font-size:14px;
 	margin: 15px;
   font-weight: 400;
 }
  footer{
  	background:#333333;
  	display: relative;
- 	overflow:auto;
-  height: 360px;
+  height: 345px;
+  overflow: auto;
  }
 .latest_press{
   display: inline-block;
 	width: 250px;
 	background:  #575756;
-	padding:5px;
+	padding:0px 10px 10px 10px;
 	position: absolute;
   right: 0;
   top:0;
-  height: 350px;
+  height: 335px;
 }
 
 .latest_press h3{
 	  color: #3195c9;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 400px;
     text-align: center;
     width: 230px;
@@ -751,25 +762,29 @@ h3{
   text-transform: capitalize;
 }
 
+.date_footer_container p{
+line-height: 24px;
+color: white;
+}
+
 .day_box_footer{
   color: #FFFFFF;
-  margin: 0px;
   text-align: center;
-  font-size: 40px;
+  font-size: 48px;
 }
 
 .month_box_footer{
   color: #FFFFFF;
   text-align: center;
-  margin-top: 5px;
+  letter-spacing: 1.5px;
+  font-size: 18px;
 }
 
 .date_footer{
-   display: inline-block;
    float: left;
    width: 60px;
    padding: 2px;
-   margin: 10px;
+   margin: 0 10px 10px 10px;
  }
 
 .date_footer_container a{
@@ -777,24 +792,212 @@ h3{
   text-decoration: none;
  }
  .signUp_box{
-  width: 200px;
-  height: 20px;
-  border-radius: 5px;
+  width: 194px;
   position: relative;
   display: block;
-  margin: 0 auto;
+  margin:5px;
 }
 
 .signUp_button{
  width: 60px;
- height: 20px;
+ height: 24px;
  position: absolute;
- right: 2px;
- margin-top: 1px;
+ right: -40px;
  background: #3195c9;
  color:white;
 }
 
+#email{
+height: 18px;
+}
+
 .social{
-	margin-top: 45px;
+	margin-top: 60px;
+}
+
+.social > ul > li{
+    float: left;
+    margin: 2px;
+}
+
+footer p a{
+  font-size: 13px;
+  color:#969696;
+  text-decoration: none;
+}
+
+footer p a:hover{
+  text-decoration: underline;
+}
+
+footer p{
+  font-size: 13px;
+  color:#969696;
+}
+
+@media all and (min-width:768px ) and (max-width:1004px){
+ 
+ .center_page{
+ width: 768px; 
+}
+
+.logo{
+  width: 109px;
+  height: 38px;
+  position: absolute;
+  top:30px;
+}
+
+.head_nav{
+  width:625px;
+  position: absolute;
+  left:90px;
+}
+
+.search_box{
+  width: 96px;
+  height: 31px;
+}
+
+.search_button{
+  left:0px;
+  height: 25px;
+  background-size: 16px;
+}
+
+.search_box:after{
+  left: 27px;
+  top:5px;
+}
+
+#search{
+  width: 65px;
+  height: 24px;
+  right:0px;
+}
+
+.slides {
+height: 520px;
+}
+
+.slides ul {
+padding: 20px 0 0 0;
+}
+
+.colors_sec{
+  width:768px;
+}
+
+.colorbox {
+width: 193px;
+}
+
+.colorbox a {
+font-size: 1.2em;
+}
+
+.services_list li{
+  width:108px;
+  background-size: 90px;
+}
+
+.services_list li:hover{
+  background-size: 90px;
+}
+
+.center {
+left: 252px;
+}
+
+.news h2{
+  width: 740px;
+  margin: 40px 0;
+}
+
+.date {
+width: 53px;
+height: 73px;
+}
+
+.day_box {
+font-size: 40px;
+width: 53px;
+height: 40px;
+}
+
+.events-sec{
+  width: 734px;
+}
+
+.event{
+  width: 243px;
+}
+
+.wrap , .large_box , .picture_box , .picrue_box_back{
+  width: 270px;
+  margin:5px;
+}
+
+.picture_box img{
+  width: 74px;
+}
+
+blockquote{
+  font-size: 16px;
+  width: 160px;
+  padding: 2px;
+}
+
+.picture_box_back blockquote {
+width: 230px;
+padding: 20px;
+font-size: 16px;
+}
+
+.small_box img{
+width: 83px;
+}
+
+.small_box{
+width: 83px;
+height:73px;
+margin:2px 1px;
+}
+
+.wrap2 ,.medium_box , .no_picture , .no_picture_back{
+  width: 176px;
+  margin:5px;
+}
+
+.medium_box  blockquote{
+  width: 150px;
+}
+
+.no_picture_back blockquote {
+width: 150px;
+padding: 20px;
+font-size: 16px;
+}
+
+.posission{
+  width: 90%;
+}
+
+.latest_press{
+  display: none;
+}
+
+footer .center_page ul {
+display: none;
+}
+
+footer{
+ height: 50px;
+}
+
+.top{
+  top: 2000px;
+  left: 550px;
+}
+
 }
