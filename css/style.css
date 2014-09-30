@@ -126,11 +126,10 @@ li{
   width: 268px;
   margin: 20px;
 }
-
-/* .links img:before{
-  content: url(..images/line_nav.png);
-  position: absolute;
-  right: 320px;
+/* 
+.links img:before{
+  content:url(..images/line_nav.png);
+  margin-right:40px;
 } */
 
 .links{
@@ -142,6 +141,7 @@ li{
   width: 100%;
   background:white;
   z-index: 20;
+  box-shadow: -5px 9px 8px rgba(0,0,0,0.4);
 }
 
 li:hover > .links {
@@ -284,6 +284,7 @@ padding-left: 0px;
   float: left;
   position:relative;
   margin: 0 35px 0 0;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
 }
 
 .colors_sec:last-child{
@@ -530,15 +531,15 @@ margin-left: 10px;
   overflow: hidden;
   position: relative;
   background:#4ea6ca;
+  margin: 3.5px;
 }
 
 .picture_box{
-   height: 170px;
+   height: 210px;
    padding: 20px;
    background: white;
    font-size: 17px;
-   margin: 3px;
-   width: 302px;
+   width: 342px;
    z-index: 10;
    position: absolute;
  }
@@ -598,7 +599,8 @@ blockquote:before {
 .picture_box_back{
   z-index: 5;
   position: absolute;
-  height: 200px;
+  height: 210px;
+  width: 342px;
 }
 
 .picture_box_back blockquote{
@@ -624,8 +626,8 @@ font-size: 18px;
 
 .small_box {
 display: inline-block;
-margin: 3px;
-margin-bottom: 1px; 
+margin: 3.5px;
+margin-bottom: -0.1px; 
 width: 107px;
 height: 95px;
 overflow: hidden;
@@ -659,16 +661,14 @@ height:210px;
 overflow: hidden;
 position: relative;
 background:#4ea6ca;
+margin: 3.5px;
 }
 
 .no_picture{
-width: 186px;
-height: 170px;
+width: 225px;
+height: 210px;
 padding: 20px;
 background: white;
-margin-left:3px;
-margin-top: 4px;
-margin-bottom: 2px;
 z-index: 10;
 position: absolute;
 }
@@ -883,10 +883,18 @@ footer p{
   color:#969696;
 }
 
-@media all and (min-width:768px ) and (max-width:1004px){
+.medium-site> ul > li {
+  float:left;
+}
+
+.medium-site .social{
+  float: right;
+}
+
+@media screen and (min-width:768px ) and (max-width:1004px){
  
  .center_page{
- width: 768px; 
+  width: 768px; 
 }
 
 .logo{
@@ -995,9 +1003,12 @@ height: 40px;
   width: 243px;
 }
 
-.wrap , .large_box , .picture_box , .picrue_box_back{
+.wrap {
+  width: 280px;
+} 
+
+.large_box , .picture_box , .picrue_box_back{
   width: 270px;
-  margin:5px;
 }
 
 .picture_box img{
@@ -1023,12 +1034,14 @@ width: 83px;
 .small_box{
 width: 83px;
 height:73px;
-margin:2px 1px;
 }
 
-.wrap2 ,.medium_box , .no_picture , .no_picture_back{
+.wrap2 {
+width: 185px;
+}
+
+.medium_box , .no_picture , .no_picture_back{
   width: 176px;
-  margin:5px;
 }
 
 .medium_box  blockquote{
