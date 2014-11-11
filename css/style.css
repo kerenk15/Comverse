@@ -3,7 +3,7 @@ html {
   height: 100%;
   width: 100%;
   font-family: 'Open Sans', sans-serif;
-  } 
+  }
 
 body{
  /*  font: 100% Lato, sans-serif; */
@@ -19,10 +19,10 @@ header{
 }
 
  .center_page{
- width: 940px; 
+ width: 940px;
  margin: 0 auto;
  position:relative;
-} 
+}
 
 .logo{
   width: 185px;
@@ -127,7 +127,7 @@ li{
   width: 268px;
   margin: 20px;
 }
-/* 
+/*
 .links img:before{
   content:url(..images/line_nav.png);
   margin-right:40px;
@@ -188,7 +188,7 @@ left: 150px;
 }
 
 .slides{
-  background: url(../images/first_slide.png)no-repeat 50% 0 fixed; 
+  background: url(../images/first_slide.png)no-repeat 50% 0 fixed;
   height: 500px;
   position:relative;
   padding-top: 5px;
@@ -197,14 +197,14 @@ left: 150px;
 .slides ul{
   padding-left: 0;
 }
- 
+
 .slides_info{
 	width: 450px;
 }
 
 .slides_info h1 {
   margin: 10px 0 10px 0;
-  font-size: 38.5px; 
+  font-size: 38.5px;
   text-transform: capitalize;
   font-weight: 400;
   z-index: 10;
@@ -223,7 +223,7 @@ left: 150px;
   text-transform: capitalize;
   color: #FFFFFF;
   position:relative;
-  text-decoration: none;	
+  text-decoration: none;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   margin:23px;
@@ -241,7 +241,7 @@ left: 150px;
   background:#3AB7EB;
 }
 
-.slide-nav{ 
+.slide-nav{
 	position:absolute;
 	left:15px;
   top: 220px;
@@ -315,7 +315,7 @@ margin-top: 10px;
   margin: 0;
   padding-right: 5px;
   position:absolute;
-  bottom:9px; 
+  bottom:9px;
   font-size: 12px;
 }
 
@@ -431,7 +431,7 @@ left: 365px;
 
 .transformation:hover{
   background: url(../images/icon6-blue.png)no-repeat top center;
-} 
+}
 
 .news{
 	height: 400px;
@@ -628,7 +628,7 @@ font-size: 18px;
 .small_box {
 display: inline-block;
 margin: 3.5px;
-margin-bottom: -0.1px; 
+margin-bottom: -0.1px;
 width: 107px;
 height: 95px;
 overflow: hidden;
@@ -719,7 +719,7 @@ font-size: 18px;
 
 footer .center_page  ul{
   display: inline-block;
-  padding: 0; 
+  padding: 0;
 }
 
 .footer_nav> li {
@@ -834,7 +834,7 @@ height: 18px;
 .social > ul > li{
     float: left;
     width: 40px;
-    height:40px; 
+    height:40px;
 
 }
 
@@ -915,9 +915,9 @@ margin: 0px;
 }
 
 @media screen and (min-width:768px ) and (max-width:1004px){
- 
+
  .center_page{
-  width: 768px; 
+  width: 768px;
 }
 
 .logo{
@@ -1028,7 +1028,7 @@ height: 40px;
 
 .wrap {
   width: 280px;
-} 
+}
 
 .large_box , .picture_box , .picrue_box_back{
   width: 270px;
@@ -1086,7 +1086,7 @@ font-size: 16px;
 }
 
 .social{
-  display: 
+  display:
 }
 
 .large-site {
@@ -1104,9 +1104,9 @@ display: none;
 }
 
 @media screen and (max-width:767px){
- 
+
  .center_page{
- width:100%; 
+ width:100%;
 }
 
   header{
@@ -1151,7 +1151,7 @@ nav > ul > li{
 
 li{
   float: none;
-  display: block;  
+  display: block;
 }
 
 .links > ul  {
@@ -1164,10 +1164,10 @@ li{
   top:0px;
 }
 
- nav li a {  
-   border-bottom: 1px solid #dbdbdb; 
+ nav li a {
+   border-bottom: 1px solid #dbdbdb;
    width: 100%;
- }  
+ }
 
  nav> ul > li:hover{
   border: none;
@@ -1189,7 +1189,7 @@ input[type=checkbox]:checked ~ nav>ul {
 
 .search_box{
   width: 100%;
- display: none;  
+ display: none;
 }
 
 .search_box:after{
@@ -1347,8 +1347,31 @@ background: #9e9e9e;
 
 #contact_form{
   width:200px;
+  position: absolute;
+  left: 40%;
 }
 
 .Contactdetails{
   background: #ECECEC;
+  height: 500px;
+}
+
+input:focus {
+      background: hsl(60, 100%, 50%);
+      outline: solid 3px #000;
+      color: #222;
+      }
+
+.contact_nav{
+width: 20%;
+}
+
+.contact_nav a{
+text-decoration: none;
+color:#585951;
+line-height: 10px;
+}
+
+.Contactdetails>.center-page>h1{
+  color: black;
 }
